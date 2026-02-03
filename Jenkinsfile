@@ -8,12 +8,7 @@ properties([
 pipeline {
     agent any
     stages {
-        stage('Checkout from Git') {
-            steps {
-                git branch: 'master', url: 'https://github.com/gmrajkumar123/End-to-End-Kubernetes-DevSecOps-Tetris-Project2.git'
-            }
-        }
-        stage('Initializing Terraform') {
+            stage('Initializing Terraform') {
             steps {
                 withAWS(credentials: 'aws-key', region: 'us-south-1') {
                 dir('EKS-TF') {
