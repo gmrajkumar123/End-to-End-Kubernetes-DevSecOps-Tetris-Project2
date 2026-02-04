@@ -4,7 +4,7 @@ terraform {
      region       = "ap-south-1"
      key          = "End-to-End-Kubernetes-DevSecOps-Tetris-Project/Jenkins-Server-TF/terraform.tfstate"
      encrypt      = true
-     use_lockfile = true
+     use_lockfile = false
    }
   required_version = ">=1.14.0"
   required_providers {
